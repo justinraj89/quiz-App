@@ -11,9 +11,13 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="font-bold mt-10 text-4xl lg:text-6xl text-black font-mono tracking-widest">Quiz</h1>
+      <h1 className="font-bold mt-10 text-4xl lg:text-6xl text-white font-mono tracking-widest">
+        Quiz
+      </h1>
 
-      <QuizContext.Provider value={{ quizState, setQuizState, score, setScore }} >
+      <QuizContext.Provider
+        value={{ quizState, setQuizState, score, setScore }}
+      >
         {quizState === "menu" && <MainMenu />}
         {quizState === "quiz" && <Quiz />}
         {quizState === "results" && <ResultsScreen />}

@@ -19,7 +19,7 @@ function MainMenu() {
 
       <div className="flex justify-center">
         <button
-          className="w-48 text-black font-bold border-2 p-2 border-black"
+          className="w-48 text-white font-bold border-2 p-2 border-white hover:text-red-400"
           onClick={() => setQuizState("quiz")}
         >
           Start Quiz
