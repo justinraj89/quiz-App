@@ -31,7 +31,7 @@ function ResultsScreen() {
       )}
 
       {score === Questions.length - 1 && (
-        <div className="flex flex-col justify-center mb-10 mt-10 items-center">
+        <div className="flex flex-col justify-center mb-10 mt-6 items-center">
           <img
             src="https://media.giphy.com/media/Jq824R93JsLwZCaiSL/giphy.gif"
             alt="logo"
@@ -52,7 +52,7 @@ function ResultsScreen() {
         </div>
       )}
 
-      {score < 3 && (
+      {score <= 3 && (
         <div className="flex flex-col justify-center mb-10 mt-10 items-center">
           <img
             src="https://media.giphy.com/media/gGxSl050qQOJi/giphy.gif"
