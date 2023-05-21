@@ -33,7 +33,7 @@ function Quiz() {
   return (
     <div className="font-mono px-8">
       <div className="flex justify-center">
-      <h1 className="font-bold text-2xl lg:text-3xl text-green-200 text-center mt-28 max-w-xl">
+      <h1 className="font-bold text-2xl lg:text-3xl text-green-200 text-center mt-20 max-w-xl">
           {Questions[currentQuestion].question}
         </h1>
       </div>
