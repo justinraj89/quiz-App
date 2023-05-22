@@ -5,7 +5,7 @@
 
 
 
-Try it out! [here](https://quiz-app-lyart-phi.vercel.app/)
+# Try it out! [here](https://quiz-app-lyart-phi.vercel.app/)
 
 
 ## Screenshots
