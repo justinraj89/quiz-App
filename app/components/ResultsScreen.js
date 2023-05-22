@@ -13,8 +13,8 @@ function ResultsScreen() {
   };
 
   return (
-    <div className="mt-12 font-mono px-8">
-      <h1 className="text-4xl text-center text-white">Quiz Results</h1>
+    <div className="mt-12 lg:mt-24 font-mono px-8">
+      <h1 className="text-4xl text-center text-white font-bold">Quiz Results</h1>
       <h3 className="text-center mt-6 text-2xl text-green-200">
         You got {score} / {Questions.length} questions right.
       </h3>
