@@ -6,7 +6,7 @@ import { Questions } from "../helpers/Questions";
 
 function ResultsScreen() {
   const { score, setScore, setQuizState } = useContext(QuizContext);
-  console.log(score);
+
   const restartQuiz = () => {
     setScore(0);
     setQuizState("menu");
@@ -14,7 +14,9 @@ function ResultsScreen() {
 
   return (
     <div className="mt-12 lg:mt-24 font-mono px-8">
-      <h1 className="text-4xl text-center text-white font-bold">Quiz Results</h1>
+      <h1 className="text-4xl text-center text-white font-bold">
+        Quiz Results
+      </h1>
       <h3 className="text-center mt-6 text-2xl text-green-200">
         You got {score} / {Questions.length} questions right.
       </h3>
@@ -26,7 +28,9 @@ function ResultsScreen() {
             alt="logo"
             className="w-60 lg:w-80 rounded-sm"
           />
-          <p className="text-xl text-white pt-4 text-center">You are a genius!</p>
+          <p className="text-xl text-white pt-4 text-center">
+            You are a genius!
+          </p>
         </div>
       )}
 
@@ -37,7 +41,9 @@ function ResultsScreen() {
             alt="logo"
             className="w-60 lg:w-80 rounded-sm"
           />
-          <p className="text-xl text-white pt-4 text-center">Almost perfection</p>
+          <p className="text-xl text-white pt-4 text-center">
+            Almost perfection
+          </p>
         </div>
       )}
 
@@ -59,7 +65,9 @@ function ResultsScreen() {
             alt="logo"
             className="w-60 lg:w-80 rounded-sm"
           />
-          <p className="text-lg text-white pt-4 text-center">Yikes! You got some work to do.</p>
+          <p className="text-lg text-white pt-4 text-center">
+            Yikes! You got some work to do.
+          </p>
         </div>
       )}
 
