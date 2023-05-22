@@ -3,6 +3,8 @@ import { useState, useContext, useEffect } from "react";
 import { QuizContext } from "../helpers/Contexts";
 import { Questions } from "../helpers/Questions";
 import QuestionBtn from "./QuestionBtn";
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 //================================
 
 function Quiz() {
@@ -16,6 +18,19 @@ function Quiz() {
   };
 
   const nextQuestion = () => {
+    if(optionChosen === ""){
+      toast.error('You must select an answer', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+      return;
+    }
     setOptionChosen("");
     if (Questions[currentQuestion].answer === optionChosen) {
       setScore(score + 1);
@@ -64,6 +79,7 @@ function Quiz() {
           </button>
         </div>
       )}
+      <ToastContainer />
     </div>
   );
 }
